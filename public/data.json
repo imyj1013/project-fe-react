@@ -1,0 +1,128 @@
+{
+  "user": [
+    {
+      "id": "qwer",
+      "password": "asdf",
+      "nickname": "zxcv"
+    }
+  ],
+  "posts": [
+    {
+      "id": "b41c",
+      "post_number": 3,
+      "title": "새로운 제목",
+      "nickname": "zxcv",
+      "content": "새로운 본문",
+      "date": "2025-01-12T00:11:19.683Z",
+      "continent": "오세아니아",
+      "like": 0
+    },
+    {
+      "id": "87df",
+      "post_number": 4,
+      "title": "테스트",
+      "nickname": "zxcv",
+      "content": "테스트",
+      "date": "2025-01-12T16:33:11.161Z",
+      "continent": "오세아니아",
+      "like": 7
+    },
+    {
+      "id": "ada9",
+      "post_number": 5,
+      "title": "dfdf",
+      "nickname": "zxcv",
+      "content": "dfdf",
+      "date": "2025-01-12T02:32:49.743Z",
+      "continent": "아시아",
+      "like": 0
+    },
+    {
+      "id": "4c3f",
+      "post_number": 6,
+      "title": "ㅈㅁ",
+      "nickname": "zxcv",
+      "content": "ㅂㅁ",
+      "date": "2025-01-12T02:49:22.450Z",
+      "continent": "오세아니아",
+      "like": 0
+    },
+    {
+      "id": "92b4",
+      "post_number": 7,
+      "title": "테스트중",
+      "nickname": "zxcv",
+      "content": "테스트중",
+      "date": "2025-01-12T04:37:44.707Z",
+      "continent": "유럽",
+      "like": 0
+    },
+    {
+      "id": "933b",
+      "post_number": 8,
+      "title": "테스트중이다",
+      "nickname": "zxcv",
+      "content": "테스트중이다",
+      "date": "2025-01-12T15:11:44.646Z",
+      "continent": "아프리카",
+      "like": 0
+    },
+    {
+      "id": "d8df",
+      "post_number": 9,
+      "title": "글쓰기",
+      "nickname": "zxcv",
+      "content": "글쓰기",
+      "date": "2025-01-12T16:33:00.699Z",
+      "continent": "아프리카",
+      "like": 0
+    }
+  ],
+  "comments": [
+    {
+      "id": "e867",
+      "comment_id": 1,
+      "post_number": 1,
+      "comment": "댓글입니다.1",
+      "nickname": "닉네임1",
+      "date": "2024/12/31 12:30:40",
+      "like": 11
+    },
+    {
+      "id": "ea1f",
+      "comment_id": 2,
+      "post_number": 2,
+      "comment": "댓글입니다.2",
+      "nickname": "닉네임2",
+      "date": "2025/1/1 10:20:30",
+      "like": 22
+    },
+    {
+      "id": "efb9",
+      "comment_id": 3,
+      "post_number": 1,
+      "comment": "댓글작성테스트",
+      "nickname": "zxcv",
+      "date": "2025-01-12T04:39:16.293Z",
+      "like": 0
+    },
+    {
+      "id": "277a",
+      "comment_id": 5,
+      "post_number": 4,
+      "comment": "댓글추가하기!!",
+      "nickname": "zxcv",
+      "date": "2025-01-12T05:24:23.153Z",
+      "like": 2
+    },
+    {
+      "id": "f0d6",
+      "comment_id": 6,
+      "post_number": 4,
+      "comment": "댓글달기",
+      "nickname": "zxcv",
+      "date": "2025-01-12T16:33:38.162Z",
+      "like": 0
+    }
+  ]
+}
