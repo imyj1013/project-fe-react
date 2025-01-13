@@ -26,7 +26,7 @@ function CommentList(props) {
     useEffect(() => {
         const fetchComments = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/comments');
+                const response = await axios.get('http://localhost:8080/comments');
                 const fetchedPosts = response.data;
                 const matchedPost = fetchedPosts.filter((item) => item.post_number === post_number);
                 setComments(matchedPost);

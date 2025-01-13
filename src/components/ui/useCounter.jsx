@@ -7,10 +7,10 @@ function useCounter(initialValue, idid, type) {
     const patchLike = async (newCount) => {
         try {
             if (type=="posts") {
-                await axios.patch(`http://localhost:3001/posts/${idid}`, { like: newCount });
+                await axios.patch(`http://localhost:8080/posts/${idid}`, { like: newCount });
             }
             else {
-                await axios.patch(`http://localhost:3001/comments/${idid}`, { like: newCount });
+                await axios.patch(`http://localhost:8080/comments/${idid}`, { like: newCount });
             }
         } catch (err) {
             console.error("Failed to update like count:", err);

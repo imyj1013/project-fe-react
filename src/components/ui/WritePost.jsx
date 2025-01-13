@@ -95,7 +95,7 @@ function WritePost(props) {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/posts');
+                const response = await axios.get('http://localhost:8080/posts');
                 setPostsforcount(response.data[response.data.length - 1]);
             } catch (err) {
                 console.error(err);
@@ -153,7 +153,7 @@ function WritePost(props) {
             const addcomment = async () => {
                 try {
                     // axios를 이용해 JSON 서버로 POST 요청
-                    await axios.post("http://localhost:3001/posts", newPost);
+                    await axios.post("http://localhost:8080/posts", newPost);
                     setTitle("");
                     setContent("");
                     navigate("/"); // 게시글 페이지로 이동

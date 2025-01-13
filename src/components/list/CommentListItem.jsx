@@ -74,7 +74,7 @@ function CommentListItem(props) {
     // 수정 완료
     const saveEdit = () => {
         axios
-            .put(`http://localhost:3001/comments/${comment.id}`, {
+            .put(`http://localhost:8080/comments/${comment.id}`, {
                 ...comment,
                 comment: editedComment,
             })
@@ -97,7 +97,7 @@ function CommentListItem(props) {
     const deleteComment = () => {
         if (comment.nickname == nickname) {
             if (window.confirm("댓글을 삭제하시겠습니까?")) {
-                axios.delete(`http://localhost:3001/comments/${comment.id}`);
+                axios.delete(`http://localhost:8080/comments/${comment.id}`);
                 navigate('/post-view');
             }
         }

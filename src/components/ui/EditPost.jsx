@@ -92,7 +92,7 @@ function EditPost() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/posts");
+        const response = await axios.get("http://localhost:8080/posts");
         const fetchedPosts = response.data;
         const matchedPost = fetchedPosts.find(
           (item) => item.post_number === post_number
@@ -155,7 +155,7 @@ function EditPost() {
 
     const updatePost = async () => {
       try {
-        await axios.patch(`http://localhost:3001/posts/${post.id}`,
+        await axios.patch(`http://localhost:8080/posts/${post.id}`,
           updatedPost
         );
         navigate("/"); // 게시글 페이지로 이동

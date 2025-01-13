@@ -8,6 +8,7 @@ const UserContainer = styled.div`
   justify-content: flex-end;
   padding: 10px 10%;
   background-color:#7499F7;
+  border-radius:5px
 `;
 
 const UserDiv = styled.div`

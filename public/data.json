@@ -4,6 +4,11 @@
       "id": "qwer",
       "password": "asdf",
       "nickname": "zxcv"
+    },
+    {
+      "id": "post20",
+      "password": "post2020",
+      "nickname": "eric"
     }
   ],
   "posts": [

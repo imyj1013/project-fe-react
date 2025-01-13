@@ -87,7 +87,7 @@ function ViewPost(props) {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/posts");
+                const response = await axios.get("http://localhost:8080/posts");
                 const fetchedPosts = response.data;
                 const matchedPost = fetchedPosts.find((item) => item.post_number === post_number);
                 setPost(matchedPost);
@@ -113,7 +113,7 @@ function ViewPost(props) {
         if (post.nickname === nickname) {
             if (window.confirm("게시글을 삭제하시겠습니까?")) {
                 try {
-                    await axios.delete(`http://localhost:3001/posts/${post.id}`);
+                    await axios.delete(`http://localhost:8080/posts/${post.id}`);
                     navigate("/");
                 } catch (err) {
                     console.error("Error while deleting post:", err);

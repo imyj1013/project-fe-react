@@ -38,7 +38,7 @@ function CommentInput(props) {
     useEffect(() => {
         const fetchComments = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/comments');
+                const response = await axios.get('http://localhost:8080/comments');
                 setCommentsforcount(response.data);
             } catch (err) {
                 console.error(err);
@@ -79,7 +79,7 @@ function CommentInput(props) {
             const addcomment = async () => {
                 try {
                     // axios를 이용해 JSON 서버로 POST 요청
-                    await axios.post("http://localhost:3001/comments", newComment);
+                    await axios.post("http://localhost:8080/comments", newComment);
                     alert("댓글이 저장되었습니다.");
                     setComment(""); // 입력 필드 초기화
                     navigate("/post-view"); // 게시글 페이지로 이동
