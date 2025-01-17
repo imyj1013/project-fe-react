@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
+import useSessionStorage from '../useSessionStorage';
 
 const SearchSection = styled.div`
   text-align: center;
@@ -47,6 +48,7 @@ const SearchIcon = styled.img`
 function SearchBar(props) {
   const navigate = useNavigate();
   const [keyword, setKeyword] = useState("");
+  const [continent, setContinent] = useSessionStorage('continent', '아시아');
   
   const handleChange = (event) => {
     setKeyword(event.target.value);
@@ -64,13 +66,13 @@ function SearchBar(props) {
   
   return (
     <SearchSection>
-        <HomeButton onClick={() => {navigate('/');}}>
+        <HomeButton onClick={() => {setContinent('아시아'); navigate('/'); window.location.reload();}}>
         <HomeImage
             src={process.env.PUBLIC_URL + '/toMainPage.png'} 
             alt="메인으로"
         />
         </HomeButton>
-        <SearchForm onSubmit={handleSubmit} action="" method="">
+        <SearchForm onSubmit={handleSubmit}>
         <SearchInput type="text" id="search" name="search" value={keyword} onChange={handleChange} placeholder="검색어를 입력하세요"/>
         <SearchButton type="submit">
             <SearchIcon

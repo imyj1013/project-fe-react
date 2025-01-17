@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
+import useSessionStorage from '../useSessionStorage';
 
 const ContinentContainer = styled.div`
   text-align: center;
@@ -27,6 +28,7 @@ const ContinentButton = styled.button`
 
 function ContinentButtons (props) {
   const navigate = useNavigate();
+  const [continent, setContinent] = useSessionStorage('continent', '아시아');
   const continents = [
     "아시아",
     "유럽",
@@ -38,7 +40,7 @@ function ContinentButtons (props) {
   return (
       <ContinentContainer>
         {continents.map((continent) => (
-          <ContinentButton key={continent} onClick={() => {navigate('/');}}>{continent}</ContinentButton>
+          <ContinentButton key={continent} onClick={() => {setContinent(continent); navigate('/'); window.location.reload();}}>{continent}</ContinentButton>
         ))}
       </ContinentContainer>
   );

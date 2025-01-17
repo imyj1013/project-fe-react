@@ -9,6 +9,11 @@
       "id": "post20",
       "password": "post2020",
       "nickname": "eric"
+    },
+    {
+      "id": "123",
+      "password": "123",
+      "nickname": "123"
     }
   ],
   "posts": [
@@ -30,17 +35,17 @@
       "content": "테스트",
       "date": "2025-01-12T16:33:11.161Z",
       "continent": "오세아니아",
-      "like": 7
+      "like": 9
     },
     {
       "id": "ada9",
       "post_number": 5,
-      "title": "dfdf",
+      "title": "도쿄 디즈니랜드 방문기",
       "nickname": "zxcv",
-      "content": "dfdf",
+      "content": "미녀와 야수 놀이기구는 꼭 타셔야 합니다! 너무 재밌어요. 길게 여행을 가신다면 디즈니랜드 옆에 있는 디즈니씨도 들려보세요. 판타지 스프링스 구역에 위치한 놀이기구들이 특히 재밌습니다. 피터팬, 겨울왕국, 소어링 꼭 타고 오세용~~",
       "date": "2025-01-12T02:32:49.743Z",
       "continent": "아시아",
-      "like": 0
+      "like": 12
     },
     {
       "id": "4c3f",
@@ -80,6 +85,16 @@
       "content": "글쓰기",
       "date": "2025-01-12T16:33:00.699Z",
       "continent": "아프리카",
+      "like": 0
+    },
+    {
+      "id": "0935",
+      "post_number": 10,
+      "title": "발리 여행 어디를 가야 할까요?",
+      "nickname": "eric",
+      "content": "6박7일 발리 여행 가려고 합니당 발리 다녀오신 분들은 어디를 갔다 오셨나요? ",
+      "date": "2025-01-17T13:38:48.721Z",
+      "continent": "아시아",
       "like": 0
     }
   ],
@@ -127,6 +142,15 @@
       "comment": "댓글달기",
       "nickname": "zxcv",
       "date": "2025-01-12T16:33:38.162Z",
+      "like": 1
+    },
+    {
+      "id": "4529",
+      "comment_id": 6,
+      "post_number": 5,
+      "comment": "추천 감사합니다!",
+      "nickname": "eric",
+      "date": "2025-01-17T13:37:11.989Z",
       "like": 0
     }
   ]

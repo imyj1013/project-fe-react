@@ -81,7 +81,7 @@ function Login(props) {
     };
 
     return (
-        <form onSubmit={handleSubmit} action="" method="" >
+        <form onSubmit={handleSubmit}>
             
             <InputContainer>
             <IDInput type="text" id="user-id" name="user-id" placeholder="ID" value={inputId} onChange={handleChangeId} />

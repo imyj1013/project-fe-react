@@ -94,7 +94,7 @@ function CommentInput(props) {
 
     return (
         <div>
-            <form onSubmit={handleSubmit} action="" method="" >
+            <form onSubmit={handleSubmit}>
                 <StyledTextarea id="comment" name="comment" value={comment} onChange={handleChange} placeholder="댓글을 입력하세요"/>
                 <CommentButton type="submit" >댓글 작성하기</CommentButton>
             </form>
